@@ -1,0 +1,21 @@
+.header
+  background-image: url(../img/header-bg.jpg)
+  background-repeat: no-repeat
+  background-size: 100%
+  width: 100%
+  max-height: 650px
+  padding-top: 42px
+  padding-bottom: 200px
+.navbar
+  @include 'flex'
+  &-logo
+    color: light
+  &-menu
+    &__item
+      display: inline
+      list-style: none
+      padding: 0
+    &__link
+      text-decoration: none
+  &-info
+    @include 'flex'
