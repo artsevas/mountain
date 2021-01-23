@@ -1,0 +1,62 @@
+.tours
+  padding-bottom: 130px
+  &-title
+    text-align: center
+    padding-bottom: 80px
+  &-wrapper
+    @include flex ()
+  &-card
+    width: 370px
+    height: 326px
+    padding-top: 42px
+    padding-bottom: 38px
+    padding-left: 40px
+    padding-right: 40px
+    &__mb-1
+      background-image: url(../img/card-1.jpg)
+    &__mb-2
+      background-image: url(../img/card-2.jpg)
+    &__mb-3
+      background-image: url(../img/card-3.jpg)
+  &__buttons
+    padding-top: 40px
+    display: flex
+    justify-content: flex-end
+  &__button
+    border: none
+    cursor: pointer
+    background-color: transparent
+    &:first-child
+      margin-right: 25px
+.card
+  &__top
+    @include flex ()
+  &__bottom
+    padding-top: 110px
+  &__title
+    font-style: normal
+    font-weight: 500
+    font-size: 26px
+    line-height: 115%
+    padding-bottom: 25px
+    @include title ()
+  &__info
+    padding-bottom: 24px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 115%
+    color: $dark
+    @include roboto ()
+    &-line
+      &::after
+        content: '|'
+        padding-left: 10px
+        padding-right: 10px
+  &__level
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 115%
+    color: $dark
