@@ -20,12 +20,6 @@
 .navbar
   padding-top: 45px
   @include flex ()
-  &-logo
-    color: $light
-    font-weight: 600
-    font-size: 24px
-    line-height: 36px
-    @include title ()
   &-menu
     &__item
       display: inline
@@ -48,3 +42,10 @@
     margin-right: 43px
   &-search
     margin-right: 30px
+.logo
+  color: $light
+  font-weight: 600
+  font-size: 24px
+  line-height: 36px
+  text-transform: uppercase
+  @include title ()
