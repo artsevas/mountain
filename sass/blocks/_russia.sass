@@ -1,0 +1,51 @@
+.russia
+  background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)), url(../img/russia-bg.jpg)
+  background-repeat: no-repeat
+  background-size: 100%
+  width: 100%
+  min-height: 750px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &-title
+    padding-top: 100px
+    padding-bottom: 25px
+    color: $light
+    @input title ()
+  &-subtitle
+    max-width: 240px
+    text-align: center
+    color: $light
+    padding-bottom: 60px
+  &-table
+    margin-bottom: 50px
+  &__row
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 100px
+    border-bottom: 1px solid #45545E
+    padding-top: 25px
+    padding-bottom: 25px
+    &-main
+      display: grid
+      grid-template-columns: repeat(4, minmax(min-content, 1fr))
+      grid-gap: 100px
+      border-bottom: 1px solid #45545E
+      padding-bottom: 15px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 140%
+    color: $light
+    &-grey
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      color: #A7AEB4
+  &-button
+    margin-bottom: 100px
+
